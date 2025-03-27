@@ -13,3 +13,9 @@ try {
         $stmt = $pdo->prepare($query);
         $stmt->execute();
     }
+    $colleges = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    echo json_encode($colleges);
+} catch (PDOException $e) {
+    echo json_encode(["error" => $e->getMessage()]);
+}
+?>
