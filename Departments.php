@@ -65,15 +65,7 @@ try {
                     <tbody id="department-table-body">
                         <?php foreach ($departments as $dep) : ?>
                             <tr>
-                                <td><?= $dep['DepartmentID'] ?></td>
-                                <td><?= $dep['CollegeID'] ?></td>
-                                <td><?= $dep['DepartmentName'] ?></td>
-                                <td><?= $dep['DepartmentCode'] ?></td>
-                                <td><?= $dep['IsActive'] ?></td>
-                                <td>
-                                    <a href="Edit-Department.php?depid=<?= $dep['DepartmentID'] ?>&collegeid=<?= $dep['CollegeID'] ?>" class="btn btn-warning btn-sm">Edit</a> 
-                                    <a href="#" onclick="confirmDelete(<?= $dep['DepartmentID'] ?>, <?= $dep['CollegeID'] ?>)" class="btn btn-danger btn-sm">Delete</a>
-                                </td>
+
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
