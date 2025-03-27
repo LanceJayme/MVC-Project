@@ -15,6 +15,8 @@
                 <label class="form-label">Password</label>
                 <input type="password" class="form-control" name="password" required>
             </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+            <p class="text-center mt-2">No account? <a href="register.php">Register</a></p>
         </form>
     </div>
 </body>
