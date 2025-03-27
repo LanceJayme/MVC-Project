@@ -41,7 +41,7 @@ try {
     <div class="container mt-5">
         <div class="card shadow-lg">
             <div class="card-header bg-primary text-white text-center">
-
+                <h3>Department List (<?= $college['CollegeName'] ?? 'Unknown College' ?>)</h3>
             </div>
             
             <div class="card-body">
